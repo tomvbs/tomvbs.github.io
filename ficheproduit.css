@@ -1,0 +1,381 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+
+}
+body{
+    background-image: url("../images/background.png");
+}
+/*--------------------------Grid headerrrrrrrrrrrrrrrrrrr-----------------------*/
+nav {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: 1fr 100px repeat(28, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .barre{  grid-area: 2 / 1 / 3 / 31;  }
+    .logo{ grid-area: 2 / 2 / 3 / 6; }
+    .accueil{ grid-area: 2 / 6 / 3 / 11; }
+    .magasin { grid-area: 2 / 11 / 3 / 16; }
+    .bibliotheque { grid-area: 2 / 16 / 3 / 21; }
+    .communaute { grid-area: 2 / 21 / 3 / 26; }
+    .moncompte { grid-area: 2 / 26 / 3 / 31; }
+    H1{
+    color:green
+}
+/*-------------------------HEADER--------------------------------*/
+.barre{
+    background-image: url("../images/nav-bar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border : 1px groove black;
+}
+
+
+.logo img{
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+.accueil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+}
+
+.magasin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.bibliotheque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.communaute{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.moncompte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.vert{
+    font-size:1em;
+    font-family: 'Press Start 2P', cursive;
+    color: #1CB510;
+    text-shadow: 2px 2px 2px #000000;
+}
+.bleu{
+    font-size:1em;
+    font-family: 'Press Start 2P', cursive;
+    color: #05B4DE;
+    text-shadow: 2px 2px 2px #000000;
+}
+/*--------------fiche produit----------------*/
+.fp {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 2200px;
+    }
+    
+    .div1 { grid-area: 1 / 2 / 17 / 16; }
+    .name { grid-area: 1 / 2 / 2 / 6; }
+    .videos { grid-area: 2 / 2 / 10 / 9; }
+    .screen { grid-area: 10 / 2 / 12 / 9; }
+    .image { grid-area: 2 / 9 / 10 / 16; }
+    .prixnote { grid-area: 10 / 9 / 12 / 16; }
+    .apropos { grid-area: 12 / 7 / 13 / 11; }
+    .description { grid-area: 13 / 3 / 17 / 14; }
+.div1{
+    
+    height: 1900px;
+}
+
+.name{
+    margin-top: 75px;
+    height: 100px;
+    width: 125%;
+    border: 1px solid #1CB510;
+    background-color: #000000;
+    border-radius: 9px;
+
+}
+.name h2{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 3em;
+    color: #1CB510;
+}
+.videos{
+    margin-left: 75px;
+    margin-top: 75px;
+    
+    height: 400px;
+    
+}
+.videos video{
+    
+    margin:0;
+    padding:0;
+    height: 400px;
+    width: 650px;
+}
+.image{
+    
+    height: 400px;
+    margin-top: 75px;
+}
+.image img{
+    margin-top: 20px;
+    height: 380px;
+    width: 650px;
+}
+.screen{
+    background-color: #000000;
+    border: 1px solid black;
+    margin-top: -680px;
+    margin-left: 75px;
+    margin-right: 14px;
+    height: 70px;
+}
+
+/*--------------------change-image------------------------*/
+
+.screen img{
+     padding: 0px 2px 0px 2px;
+}
+.prixnote{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border:1px solid black;
+    margin-right: 88px;
+    margin-top: -680px;
+    height: 70px;
+    background-color: #000000;
+    
+}
+#prix{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+    color: #1CB510;
+}
+#note{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+    color: #FAFF00;
+}
+.prixnote button{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+    background-color: #05B4DE;
+    padding: 5px 15px 5px 15px;
+}
+.apropos{
+    margin-top: -800px;
+    margin-left: -75px;
+    height: 100px;
+    width: 125%;
+    border: 1px solid #05B4DE;
+    background-color: #000000;
+    border-radius: 9px;
+
+}
+.apropos h2{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 3em;
+    color: #05B4DE;
+}
+.description{
+    height: min-content;
+    border:1px solid #05B4DE;
+    background-color: #000000;
+    margin-top: -800px;
+    margin-left: 75px;
+    border-radius: 9px;
+}
+.description p{
+    text-align: justify;
+    color: white;
+    font-family: 'Average', serif;
+    font-size: 1.5em;
+    padding:50px;
+    line-height: 150%;
+}
+/*--------------------------------------------------------FOOTER----------------------------------------*/
+
+.foot {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(17, 1fr) repeat(3, 50px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .foot1 { grid-area: 18 / 1 / 21 / 21; }
+    .logo4 { grid-area: 18 / 1 / 21 / 4; }
+    .accueil4 { grid-area: 18 / 5 / 19 / 10; }
+    .magasin4 { grid-area: 19 / 5 / 20 / 10; }
+    .biblio4 { grid-area: 20 / 5 / 21 / 10; }
+    .commu4 { grid-area: 18 / 10 / 19 / 15; }
+    .mc4 { grid-area: 19 / 10 / 20 / 15; }
+    .lm4 { grid-area: 20 / 10 / 21 / 15; }
+    .dev4 { grid-area: 18 / 15 / 19 / 21; }
+    .apropos4 { grid-area: 19 / 15 / 20 / 21; }
+    .langue4 { grid-area: 20 / 15 / 21 / 21; }
+
+    .logo4 img{
+        height: 150px;
+        width: 150px;
+    }
+    .foot1{
+        background-image: url("../images/nav-bar.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0%;
+    }
+    .accueil4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .accueil4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .magasin4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .magasin4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .biblio4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .biblio4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .commu4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .commu4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .mc4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .mc4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .lm4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .lm4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .dev4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .dev4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .apropos4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .apropos4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .langue4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .langue4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }

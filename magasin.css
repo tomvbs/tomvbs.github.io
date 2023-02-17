@@ -1,0 +1,1096 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+
+}
+body{
+    background-image: url("../images/background.png");
+}
+/*--------------------------Grid headerrrrrrrrrrrrrrrrrrr-----------------------*/
+nav {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: 1fr 100px repeat(28, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .barre{  grid-area: 2 / 1 / 3 / 31;  }
+    .logo{ grid-area: 2 / 2 / 3 / 6; }
+    .accueil{ grid-area: 2 / 6 / 3 / 11; }
+    .magasin { grid-area: 2 / 11 / 3 / 16; }
+    .bibliotheque { grid-area: 2 / 16 / 3 / 21; }
+    .communaute { grid-area: 2 / 21 / 3 / 26; }
+    .moncompte { grid-area: 2 / 26 / 3 / 31; }
+    H1{
+    color:green
+}
+/*-------------------------HEADER--------------------------------*/
+.barre{
+    background-image: url("../images/nav-bar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border : 1px groove black;
+}
+
+
+.logo img{
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+.accueil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+}
+
+.magasin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.bibliotheque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.communaute{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.moncompte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.vert{
+    font-size:1em;
+    font-family: 'Press Start 2P', cursive;
+    color: #1CB510;
+    text-shadow: 2px 2px 2px #000000;
+}
+.bleu{
+    font-size:1em;
+    font-family: 'Press Start 2P', cursive;
+    color: #05B4DE;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+
+/*---------------------------------PARTIE1--------------------------------------*/
+
+
+
+
+/*----------------------------OFFRES SPECIALES----------------------------------*/
+.offre {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .sec1 { grid-area: 1 / 2 / 13 / 11; }
+    .offretitre { grid-area: 1 / 2 / 2 / 5; }
+    .callof { grid-area: 2 / 2 / 12 / 5; }
+    .cyber { grid-area: 2 / 5 / 12 / 8; }
+    .hacknet { grid-area: 2 / 8 / 12 / 11; }
+
+.offre{
+   
+    height: 1500px;
+}
+.offretitre{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2.5em;
+    color: #1CB510;
+    margin-top: 100px;
+    background-image: url("../images/fond_titre_bleu.jpg");
+    background-size: cover;
+    border-radius: 9px;
+    border:1px solid #1CB510;
+}
+.offretitre h2{
+    text-align: center;
+    text-shadow: 2px 2px 6px #000000;
+}
+/*---------------------------Call of------------------------------*/
+.callof{
+    margin-top: 100px;
+    padding:0 40px 0 40px;
+}
+.callofimg{
+    height: 165px;
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: rgb(5,180,222);
+background: radial-gradient(circle, rgba(5,180,222,1) 16%, rgba(0,0,0,1) 75%);
+    border-radius: 91px;
+    border: 5px solid #000000;
+}
+.callofimg img{
+    border: 5px solid #05B4DE;
+    border-radius: 91px;
+}
+.reducprix{
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'PT Sans Narrow', sans-serif;
+  
+    margin-top: 10px;
+}
+.reduction{
+    color: #05B4DE;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 30px 6px 30px;
+}
+.prix{
+    color: #1CB510;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 14px 6px 14px;
+}
+.note{
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+
+}
+.note p{
+    color: #FAFF00;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:2em;
+}
+.description{
+    height: 550px;
+    margin-top:15px;
+    border: 1px solid black;
+    padding:20px;
+    background-color: #000000;
+    border-radius: 9px;
+}
+.description p{
+    text-align: center;
+    font-family: 'Average', serif;
+    font-size: 1.5em;
+    color: white;
+
+}
+.boutton{
+    margin-top:15px;
+    display:flex;
+    justify-content: center;
+}
+.boutton button{
+    font-size:2em;
+    height: 50px;
+    width: 400px;
+    background-color: #1CB510;
+    border-radius: 9px;
+}
+/*--------------------------------------CYBERPUNK--------------------------*/
+.cyber{
+    margin-top: 100px;
+    padding:0 40px 0 40px;
+}
+.cyberimg{
+    height: 165px;
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: rgb(5,180,222);
+background: radial-gradient(circle, rgba(5,180,222,1) 16%, rgba(0,0,0,1) 75%);
+    border-radius: 91px;
+    border: 5px solid #000000;
+}
+.cyberimg img{
+    border: 5px solid #05B4DE;
+    border-radius: 91px;
+}
+.reducprix{
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'PT Sans Narrow', sans-serif;
+  
+    margin-top: 10px;
+}
+.reduction{
+    color: #05B4DE;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 30px 6px 30px;
+}
+.prix{
+    color: #1CB510;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 14px 6px 14px;
+}
+.note{
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+
+}
+.note p{
+    color: #FAFF00;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:2em;
+}
+.description{
+    margin-top:15px;
+    border: 1px solid black;
+    padding:20px;
+    background-color: #000000;
+    border-radius: 9px;
+}
+.description p{
+    text-align: center;
+    font-family: 'Average', serif;
+    font-size: 1.5em;
+    color: white;
+
+}
+.boutton{
+    margin-top:15px;
+    display:flex;
+    justify-content: center;
+}
+.boutton button{
+    font-size:2em;
+    height: 50px;
+    width: 400px;
+    background-color: #1CB510;
+    border-radius:9px;
+}
+/*----------------------------HACKNET---------------------------------*/
+.hacknet{
+    margin-top: 100px;
+    padding:0 40px 0 40px;
+}
+.hacknetimg{
+    height: 165px;
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: rgb(5,180,222);
+background: radial-gradient(circle, rgba(5,180,222,1) 16%, rgba(0,0,0,1) 75%);
+    border-radius: 91px;
+    border: 5px solid #000000;
+}
+.hacknetimg img{
+    border: 5px solid #05B4DE;
+    border-radius: 91px;
+}
+.reducprix{
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'PT Sans Narrow', sans-serif;
+  
+    margin-top: 10px;
+}
+.reduction{
+    color: #05B4DE;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 30px 6px 30px;
+}
+.prix{
+    color: #1CB510;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 14px 6px 14px;
+}
+.note{
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+
+}
+.note p{
+    color: #FAFF00;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:2em;
+}
+.description{
+    margin-top:15px;
+    border: 1px solid black;
+    padding:20px;
+    background-color: #000000;
+    border-radius: 9px;
+}
+.description p{
+    text-align: center;
+    font-family: 'Average', serif;
+    font-size: 1.5em;
+    color: white;
+
+}
+.boutton{
+    margin-top:15px;
+    display:flex;
+    justify-content: center;
+}
+.boutton button{
+    font-size:2em;
+    height: 50px;
+    width: 400px;
+    background-color: #1CB510;
+    border-radius:9px;
+}
+
+
+/*-----------------------------------------PARTIE2-------------------------------------*/
+
+/*----------------------------Jeux populaires----------------------------------*/
+
+.poptitre h2{
+    text-align: center;
+    text-shadow: 2px 2px 6px #000000;
+}
+
+.pop {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .sec2 { grid-area: 1 / 2 / 13 / 11; }
+    .poptitre { grid-area: 1 / 2 / 2 / 5; }
+    .dead { grid-area: 2 / 2 / 12 / 5; }
+    .evil { grid-area: 2 / 5 / 12 / 8; }
+    .lost { grid-area: 2 / 8 / 12 / 11; }
+
+.poptitre{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2.5em;
+    color: #1CB510;
+    margin-top: 100px;
+    background-image: url("../images/fond_titre_bleu.jpg");
+    background-size: cover;
+    border-radius: 9px;
+    border:1px solid #1CB510;
+}
+
+/*---------------------------Dead space------------------------------*/
+.dead{
+    margin-top: 100px;
+    padding:0 40px 0 40px;
+}
+.deadimg{
+    height: 165px;
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: rgb(5,180,222);
+background: radial-gradient(circle, rgba(5,180,222,1) 16%, rgba(0,0,0,1) 75%);
+    border-radius: 91px;
+    border: 5px solid #000000;
+}
+.deadimg img{
+    border: 5px solid #1CB510;
+    border-radius: 91px;
+}
+.reducprix{
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'PT Sans Narrow', sans-serif;
+  
+    margin-top: 10px;
+}
+.reduction{
+    color: #05B4DE;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 30px 6px 30px;
+}
+.prix{
+    color: #1CB510;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 14px 6px 14px;
+}
+.note{
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+
+}
+.note p{
+    color: #FAFF00;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:2em;
+}
+.description{
+    height: 550px;
+    margin-top:15px;
+    border: 1px solid black;
+    padding:20px;
+    background-color: #000000;
+    border-radius: 9px;
+}
+.description p{
+    text-align: center;
+    font-family: 'Average', serif;
+    font-size: 1.5em;
+    color: white;
+
+}
+.boutton{
+    margin-top:15px;
+    display:flex;
+    justify-content: center;
+}
+.boutton button{
+    font-size:2em;
+    height: 50px;
+    width: 400px;
+    background-color: #05B4DE;
+    border-radius: 9px;
+}
+/*--------------------------------------evil west--------------------------*/
+.evil{
+    margin-top: 100px;
+    padding:0 40px 0 40px;
+}
+.evilimg{
+    height: 165px;
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: rgb(5,180,222);
+background: radial-gradient(circle, rgba(5,180,222,1) 16%, rgba(0,0,0,1) 75%);
+    border-radius: 91px;
+    border: 5px solid #000000;
+}
+.evilimg img{
+    border: 5px solid #1CB510;
+    border-radius: 91px;
+}
+.reducprix{
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'PT Sans Narrow', sans-serif;
+  
+    margin-top: 10px;
+}
+.reduction{
+    color: #05B4DE;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 30px 6px 30px;
+}
+.prix{
+    color: #1CB510;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 14px 6px 14px;
+}
+.note{
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+
+}
+.note p{
+    color: #FAFF00;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:2em;
+}
+.description{
+    margin-top:15px;
+    border: 1px solid black;
+    padding:20px;
+    background-color: #000000;
+    border-radius: 9px;
+}
+.description p{
+    text-align: center;
+    font-family: 'Average', serif;
+    font-size: 1.5em;
+    color: white;
+
+}
+.boutton{
+    margin-top:15px;
+    display:flex;
+    justify-content: center;
+}
+.boutton button{
+    font-size:2em;
+    height: 50px;
+    width: 400px;
+    background-color: #05B4DE;
+    border-radius:9px;
+}
+/*----------------------------lost eidolons---------------------------------*/
+.lost{
+    margin-top: 100px;
+    padding:0 40px 0 40px;
+}
+.lostimg{
+    height: 165px;
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: rgb(5,180,222);
+background: radial-gradient(circle, rgba(5,180,222,1) 16%, rgba(0,0,0,1) 75%);
+    border-radius: 91px;
+    border: 5px solid #000000;
+}
+.lostimg img{
+    border: 5px solid #1CB510;
+    border-radius: 91px;
+}
+.reducprix{
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'PT Sans Narrow', sans-serif;
+  
+    margin-top: 10px;
+}
+.reduction{
+    color: #05B4DE;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 30px 6px 30px;
+}
+.prix{
+    color: #1CB510;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 14px 6px 14px;
+}
+.note{
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+
+}
+.note p{
+    color: #FAFF00;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:2em;
+}
+.description{
+    margin-top:15px;
+    border: 1px solid black;
+    padding:20px;
+    background-color: #000000;
+    border-radius: 9px;
+}
+.description p{
+    text-align: center;
+    font-family: 'Average', serif;
+    font-size: 1.5em;
+    color: white;
+
+}
+.boutton{
+    margin-top:15px;
+    display:flex;
+    justify-content: center;
+}
+.boutton button{
+    font-size:2em;
+    height: 50px;
+    width: 400px;
+    background-color: #05B4DE;
+    border-radius:9px;
+}
+
+/*-----------------------------------------PARTIE3-------------------------------------*/
+
+/*----------------------------Decouverte----------------------------------*/
+.dec {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .sec3 { grid-area: 1 / 2 / 13 / 11; }
+    .dectitre { grid-area: 1 / 2 / 2 / 5; }
+    .sekiro { grid-area: 2 / 2 / 12 / 5; }
+    .tower { grid-area: 2 / 5 / 12 / 8; }
+    .skyrim { grid-area: 2 / 8 / 12 / 11; }
+
+    .dec{
+     
+        height: 1500px;
+        margin-top: -700px;
+    }
+.dectitre{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2.5em;
+    color: #1CB510;
+    margin-top: 100px;
+    background-image: url("../images/fond_titre_bleu.jpg");
+    background-size: cover;
+    border-radius: 9px;
+    border:1px solid #1CB510;
+}
+.dectitre h2{
+    text-align: center;
+    text-shadow: 2px 2px 6px #000000;
+
+}
+/*---------------------------Sekiro------------------------------*/
+.sekiro{
+    margin-top: 100px;
+    padding:0 40px 0 40px;
+}
+.sekiroimg{
+    height: 165px;
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: rgb(5,180,222);
+background: radial-gradient(circle, rgba(5,180,222,1) 16%, rgba(0,0,0,1) 75%);
+    border-radius: 91px;
+    border: 5px solid #000000;
+}
+.sekiroimg img{
+    border: 5px solid #1CB510;
+    border-radius: 91px;
+}
+.reducprix{
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'PT Sans Narrow', sans-serif;
+  
+    margin-top: 10px;
+}
+.reduction{
+    color: #05B4DE;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 30px 6px 30px;
+}
+.prix{
+    color: #1CB510;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 14px 6px 14px;
+}
+.note{
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+
+}
+.note p{
+    color: #FAFF00;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:2em;
+}
+.description{
+    height: 550px;
+    margin-top:15px;
+    border: 1px solid black;
+    padding:20px;
+    background-image: url("../images/screenchot/gamevert.jpg");
+    
+    border-radius: 9px;
+}
+.description:hover{
+    height: 550px;
+    margin-top:15px;
+    border: 1px solid #05B4DE;
+    padding:20px;
+    background-image: url("../images/screenchot/gamebleu.jpg");
+    transition-delay: 0.2s;
+    border-radius: 9px;
+}
+
+.description p{
+    text-align:justify;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Average', serif;
+    font-size: 1.5em;
+    color: white;
+
+}
+.boutton{
+    margin-top:15px;
+    display:flex;
+    justify-content: center;
+}
+
+.boutton button{
+    font-size:2em;
+    height: 50px;
+    width: 400px;
+    background-color: #05B4DE;
+    border-radius: 9px;
+}
+a button:hover{
+    background-color: #1CB510;
+    height: 60px;
+    width: 450px;
+    
+}
+/*--------------------------------------tower of fantasy--------------------------*/
+.tower{
+    margin-top: 100px;
+    padding:0 40px 0 40px;
+}
+.towerimg{
+    height: 165px;
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: rgb(5,180,222);
+background: radial-gradient(circle, rgba(5,180,222,1) 16%, rgba(0,0,0,1) 75%);
+    border-radius: 91px;
+    border: 5px solid #000000;
+}
+.towerimg img{
+    border: 5px solid #1CB510;
+    border-radius: 91px;
+}
+.reducprix{
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'PT Sans Narrow', sans-serif;
+  
+    margin-top: 10px;
+}
+.reduction{
+    color: #05B4DE;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 30px 6px 30px;
+}
+.prix{
+    color: #1CB510;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 14px 6px 14px;
+}
+.note{
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+
+}
+.note p{
+    color: #FAFF00;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:2em;
+}
+.description{
+    margin-top:15px;
+    border: 1px solid black;
+    padding:20px;
+    background-color: #000000;
+    border-radius: 9px;
+}
+.description p{
+    text-align: center;
+    font-family: 'Average', serif;
+    font-size: 1.5em;
+    color: white;
+
+}
+.boutton{
+    margin-top:15px;
+    display:flex;
+    justify-content: center;
+}
+.boutton button{
+    font-size:2em;
+    height: 50px;
+    width: 400px;
+    background-color: #05B4DE;
+    border-radius:9px;
+}
+/*----------------------------Skyrim---------------------------------*/
+.skyrim{
+    margin-top: 100px;
+    padding:0 40px 0 40px;
+}
+.skyrimimg{
+    height: 165px;
+    width: 293px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: rgb(5,180,222);
+background: radial-gradient(circle, rgba(5,180,222,1) 16%, rgba(0,0,0,1) 75%);
+    border-radius: 91px;
+    border: 5px solid #000000;
+}
+.skyrimimg img{
+    border: 5px solid #1CB510;
+    border-radius: 91px;
+}
+.reducprix{
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'PT Sans Narrow', sans-serif;
+  
+    margin-top: 10px;
+}
+.reduction{
+    color: #05B4DE;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 30px 6px 30px;
+}
+.prix{
+    color: #1CB510;
+    background-color: #000000;
+    border-radius: 50px;
+    padding: 6px 14px 6px 14px;
+}
+.note{
+    margin-top: 15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    border-radius: 9px;
+
+}
+.note p{
+    color: #FAFF00;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:2em;
+}
+.description{
+    margin-top:15px;
+    border: 1px solid black;
+    padding:20px;
+    background-color: #000000;
+    border-radius: 9px;
+}
+.description p{
+    text-align: center;
+    font-family: 'Average', serif;
+    font-size: 1.5em;
+    color: white;
+
+}
+.boutton{
+    margin-top:15px;
+    display:flex;
+    justify-content: center;
+}
+.boutton button{
+    font-size:2em;
+    height: 50px;
+    width: 400px;
+    background-color: #05B4DE;
+    border-radius:9px;
+}
+/*--------------------------------------------------------FOOTER----------------------------------------*/
+
+.foot {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(17, 1fr) repeat(3, 50px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .foot1 { grid-area: 18 / 1 / 21 / 21; }
+    .logo4 { grid-area: 18 / 1 / 21 / 4; }
+    .accueil4 { grid-area: 18 / 5 / 19 / 10; }
+    .magasin4 { grid-area: 19 / 5 / 20 / 10; }
+    .biblio4 { grid-area: 20 / 5 / 21 / 10; }
+    .commu4 { grid-area: 18 / 10 / 19 / 15; }
+    .mc4 { grid-area: 19 / 10 / 20 / 15; }
+    .lm4 { grid-area: 20 / 10 / 21 / 15; }
+    .dev4 { grid-area: 18 / 15 / 19 / 21; }
+    .apropos4 { grid-area: 19 / 15 / 20 / 21; }
+    .langue4 { grid-area: 20 / 15 / 21 / 21; }
+
+    .logo4 img{
+        height: 150px;
+        width: 150px;
+    }
+    .foot1{
+        background-image: url("../images/nav-bar.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0%;
+    }
+    .accueil4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .accueil4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .magasin4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .magasin4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .biblio4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .biblio4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .commu4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .commu4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .mc4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .mc4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .lm4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .lm4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .dev4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .dev4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .apropos4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .apropos4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .langue4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .langue4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }

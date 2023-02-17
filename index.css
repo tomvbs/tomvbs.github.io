@@ -1,0 +1,584 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+
+}
+body{
+    background-image: url("../images/background.png");
+}
+/*--------------------------Grid headerrrrrrrrrrrrrrrrrrr-----------------------*/
+nav {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: 1fr 100px repeat(28, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .barre{  grid-area: 2 / 1 / 3 / 31;  }
+    .logo{ grid-area: 2 / 2 / 3 / 6; }
+    .accueil{ grid-area: 2 / 6 / 3 / 11; }
+    .magasin { grid-area: 2 / 11 / 3 / 16; }
+    .bibliotheque { grid-area: 2 / 16 / 3 / 21; }
+    .communaute { grid-area: 2 / 21 / 3 / 26; }
+    .moncompte { grid-area: 2 / 26 / 3 / 31; }
+    H1{
+    color:green
+}
+/*-------------------------HEADER--------------------------------*/
+.barre{
+    background-image: url("../images/nav-bar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border : 1px groove black;
+}
+
+
+.logo img{
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+.accueil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+}
+
+.magasin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.bibliotheque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.communaute{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.moncompte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.vert{
+    font-size:1em;
+    font-family: 'Press Start 2P', cursive;
+    color: #1CB510;
+    text-shadow: 2px 2px 2px #000000;
+}
+.bleu{
+    font-size:1em;
+    font-family: 'Press Start 2P', cursive;
+    color: #05B4DE;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+/*---------------caroussel-------------*/
+.caroussel {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .caroussel2 { grid-area: 1 / 2 / 10 / 10; }
+    .caroussel3 { grid-area: 1 / 2 / 10 / 10; } 
+    
+    .slider-container {
+        
+        
+        width:100%;
+        position: relative;
+        margin: auto;
+        height: 700px;
+        overflow: hidden;
+        
+      }
+      .menu {
+        position: absolute;
+        left: 0;
+        z-index: 11;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+      }
+      .menu label {
+        cursor: pointer;
+        display: inline-block;
+        width: 50px;
+        height: 10px;
+        background: #05B4DE;
+        border-radius: 50px;
+        margin: 0 0.2em 1em;
+      }
+      .menu label:hover,.menu label:focus {
+        background: #1CB510;
+      }
+      .slide-img {
+        width: 100%;
+        height: 95%;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        z-index: 10;
+        transition: left 0s 0.75s;
+      }
+      [id^="slide"]:checked + .slide-img {
+        left: 0;
+        z-index: 100;
+        transition: left 0.65s ease-out;
+      }
+/*---------------Jeux Recommendés---------------*/
+.jeuxrec {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .jeuxrec2 { grid-area: 1 / 2 / 9 / 10; }
+    .jeuxrectext { grid-area: 1 / 2 / 2 / 10; }
+    .jeuxrecimg { grid-area: 2 / 2 / 9 / 10; }
+
+
+      .slider-content {
+        
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        height: 350px;
+        overflow: hidden;
+        margin-top: 100 px;
+      }
+      .slider {
+        
+        position: absolute;
+        left: 0;
+        z-index: 11;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
+      }
+    
+    
+    
+    
+      .slider label {
+        cursor: pointer;
+        display: inline-block;
+        width: 50px;
+        height: 10px;
+        background: #1CB510;
+        border-radius: 50px;
+        margin: 0 0.2em 1em;
+      }
+    
+    
+    
+    
+      .slider label:hover,.slider label:focus {
+        background: #05B4DE;
+      }
+     
+    
+    
+    
+      .img-slide{
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        z-index: 10;
+        transition: left 0s 0.75s;
+      }
+      [id^="slide"]:checked + .img-slide {
+        left: 0;
+        z-index: 100;
+        transition: left 0.65s ease-out;}
+      .jeuxrecimg{
+        margin-top: 75px;
+      }
+      .jeuxrectext{
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 2em;
+        color: #1CB510; 
+        border-radius: 10px;
+        width: 27%;
+        padding-left: 45px;
+        background-image: url("../images/fond_titre_bleu.jpg");
+        background-size: cover;
+        text-shadow: 2px 2px 6px #000000;
+
+        border: 1px solid #1CB510;
+      }
+    /*--------------------Jeux par catégories------------------------*/
+    
+ 
+    
+    .jpc{
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size: 3em;
+        color: #05B4DE; 
+        border-radius: 10px;
+        width: 23%;
+        padding-left: 45px;
+        background-image: url("../images/fond_titre.jpg");
+        background-size: cover;
+        text-shadow: 2px 2px 6px #000000;
+
+        margin-left: 175px;
+        border:1px solid #05B4DE
+    }
+    .card {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+        .card1 { grid-area: 1 / 2 / 8 / 10; }
+        .card2 { grid-area: 1 / 2 / 8 / 10; }
+        .card2{
+            margin-top: 75px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        
+       
+        .card2 img{
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 169px;
+            border: 2px ridge #1CB510;
+        }
+       
+        .textcard {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            }
+            
+            .textcard1 { grid-area: 1 / 2 / 2 / 10; }
+            .textcard2 { grid-area: 1 / 2 / 2 / 10; }
+        
+            .textcard{
+               
+                height: 400px;
+            }
+        
+            .textcard2{
+            display: flex;
+            flex-direction: row;
+          
+            margin-left: 20px;
+            margin-top: -100px;
+            margin-bottom: 100px;
+           
+        }
+
+        .textcardbis{
+     
+            height: 200px;
+        }
+        #fps{
+            margin-left: 150px;
+            
+            padding: 5px 50px 5px 50px;
+            background-color:#05B4DE;
+            border-radius: 20px;
+            font-family: 'PT Sans Narrow', sans-serif;
+            font-size: 2em;
+     
+        }
+        #action{
+            margin-left: 320px;
+            padding: 5px 50px 5px 50px;
+            background-color:#1CB510;
+            border-radius: 20px;
+            font-family: 'PT Sans Narrow', sans-serif;
+            font-size: 2em;
+       
+
+        }
+        #ftp{
+            margin-left: 300px;
+            padding: 5px 50px 5px 50px;
+            background-color:#05B4DE;
+            border-radius: 20px;
+            font-family: 'PT Sans Narrow', sans-serif;
+            font-size: 2em;
+    
+        }
+        #fps:hover{
+            background-color: #1CB510;
+            transition-delay: 0.2s;
+        }
+        #action:hover{
+            background-color: #05B4DE;
+            transition-delay: 0.2s;
+        }
+        #ftp:hover{
+            background-color: #1CB510;
+            transition-delay: 0.2s;
+        }
+        /*-------------------------------------------------cardbis----------------------------*/
+        .cardbis {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            }
+            
+            .card1bis { grid-area: 1 / 2 / 8 / 10; }
+            .card2bis { grid-area: 1 / 2 / 8 / 10; }
+            .card2bis{
+                margin-top: 75px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+           .cardbis{
+            
+            margin-top: -350px;
+           }
+            .card2bis img{
+                margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 169px;
+                border: 2px ridge #05B4DE;
+            }
+            .textcardbis {
+                display: grid;
+                grid-template-columns: repeat(10, 1fr);
+                grid-template-rows: repeat(10, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                }
+                
+                .textcard1bis { grid-area: 1 / 2 / 2 / 10; }
+                .textcard2bis { grid-area: 1 / 2 / 2 / 10; }
+            .textcard2bis{
+                display: flex;
+                flex-direction: row;
+               
+                margin-left: 20px;
+                margin-top: -100px;
+                margin-bottom: 100px;
+            }
+            #mmo{
+                margin-left: 150px;
+                
+                padding: 5px 50px 5px 50px;
+                background-color:#1CB510;
+                border-radius: 20px;
+                font-family: 'PT Sans Narrow', sans-serif;
+                font-size: 2em;
+         
+            }
+            #sport{
+                margin-left: 320px;
+                padding: 5px 50px 5px 50px;
+                background-color:#05B4DE;
+                border-radius: 20px;
+                font-family: 'PT Sans Narrow', sans-serif;
+                font-size: 2em;
+           
+    
+            }
+            #aventure{
+                margin-left: 300px;
+                padding: 5px 50px 5px 50px;
+                background-color:#1CB510;
+                border-radius: 20px;
+                font-family: 'PT Sans Narrow', sans-serif;
+                font-size: 2em;
+        
+            }
+            #mmo:hover{
+                background-color: #05B4DE;
+                transition-delay: 0.2s;
+            }
+            #sport:hover{
+                background-color: #1CB510;
+                transition-delay: 0.2s;
+            }
+            #aventure:hover{
+                background-color: #05B4DE;
+                transition-delay: 0.2s;
+            }
+/*--------------------------------------------------------FOOTER----------------------------------------*/
+
+.foot {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(17, 1fr) repeat(3, 50px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .foot1 { grid-area: 18 / 1 / 21 / 21; }
+    .logo4 { grid-area: 18 / 1 / 21 / 4; }
+    .accueil4 { grid-area: 18 / 5 / 19 / 10; }
+    .magasin4 { grid-area: 19 / 5 / 20 / 10; }
+    .biblio4 { grid-area: 20 / 5 / 21 / 10; }
+    .commu4 { grid-area: 18 / 10 / 19 / 15; }
+    .mc4 { grid-area: 19 / 10 / 20 / 15; }
+    .lm4 { grid-area: 20 / 10 / 21 / 15; }
+    .dev4 { grid-area: 18 / 15 / 19 / 21; }
+    .apropos4 { grid-area: 19 / 15 / 20 / 21; }
+    .langue4 { grid-area: 20 / 15 / 21 / 21; }
+
+    .logo4 img{
+        height: 150px;
+        width: 150px;
+    }
+    .foot1{
+        background-image: url("../images/nav-bar.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0%;
+    }
+    .accueil4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .accueil4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .magasin4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .magasin4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .biblio4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .biblio4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .commu4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .commu4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .mc4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .mc4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .lm4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .lm4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .dev4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .dev4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .apropos4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .apropos4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .langue4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .langue4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }

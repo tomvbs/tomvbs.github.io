@@ -1,0 +1,459 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+
+}
+body{
+    background-image: url("../images/background.png");
+}
+/*--------------------------Grid headerrrrrrrrrrrrrrrrrrr-----------------------*/
+nav {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: 1fr 100px repeat(28, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .barre{  grid-area: 2 / 1 / 3 / 31;  }
+    .logo{ grid-area: 2 / 2 / 3 / 6; }
+    .accueil{ grid-area: 2 / 6 / 3 / 11; }
+    .magasin { grid-area: 2 / 11 / 3 / 16; }
+    .bibliotheque { grid-area: 2 / 16 / 3 / 21; }
+    .communaute { grid-area: 2 / 21 / 3 / 26; }
+    .moncompte { grid-area: 2 / 26 / 3 / 31; }
+    H1{
+    color:green
+}
+/*-------------------------HEADER--------------------------------*/
+.barre{
+    background-image: url("../images/nav-bar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border : 1px groove black;
+}
+
+
+.logo img{
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+.accueil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+}
+
+.magasin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.bibliotheque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.communaute{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.moncompte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.vert{
+    font-size:1em;
+    font-family: 'Press Start 2P', cursive;
+    color: #1CB510;
+    text-shadow: 2px 2px 2px #000000;
+}
+.bleu{
+    font-size:1em;
+    font-family: 'Press Start 2P', cursive;
+    color: #05B4DE;
+    text-shadow: 2px 2px 2px #000000;
+}
+/*----------------------Mon compte-------------------------*/
+.moncompte2 {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 3 / 21 / 19; }
+    .div2 { grid-area: 1 / 3 / 5 / 19; }
+    .compte { grid-area: 1 / 3 / 5 / 8; }
+    .avatar { grid-area: 1 / 8 / 5 / 13; }
+    .info { grid-area: 1 / 13 / 5 / 19; }
+    .para1 { grid-area: 5 / 3 / 14 / 7; }
+    .para2 { grid-area: 14 / 3 / 21 / 7; }
+    .div8 { grid-area: 5 / 7 / 14 / 19; }
+    .jeux { grid-area: 5 / 11 / 6 / 15; }
+    .jeux1 { grid-area: 6 / 7 / 14 / 13; }
+    .jeux2 { grid-area: 6 / 13 / 14 / 19; }
+    .screen{ grid-area: 14 / 7 / 18 / 19; }
+    .videos { grid-area: 18 / 7 / 21 / 19; }
+.compte{
+    margin-top: 75px;
+    
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+    color:white;
+    height: 250px;
+    background-color: #000000;
+    border-left: 1px solid #05B4DE;
+    border-top: 1px solid #05B4DE;
+    border-bottom: 1px solid #05B4DE;
+
+
+}
+.compte p{
+    padding:40px;
+}
+.avatar{
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    height: 250px;
+    margin-top: 75px;
+    background-color: #000000;
+    
+    border-top: 1px solid #05B4DE;
+    border-bottom: 1px solid #05B4DE;
+}
+.avatar img{
+    height: 200px;
+    width: 200px;
+    padding-top: 23px;
+    border-radius: 9px;
+}
+.info{
+    margin-top: 75px;
+    margin-right: -50px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+    color:white;
+    height: 250px;
+    background-color: #000000;
+    border-right: 1px solid #05B4DE;
+    border-top: 1px solid #05B4DE;
+    border-bottom: 1px solid #05B4DE;
+}
+.info p{
+    padding:40px;
+}
+.para1{
+    margin-right: 15px;
+    margin-top: 75px;
+    height: 730px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+    color:white;
+   border:1px solid #1CB510;
+    background-color: #000000;
+}
+.para1 p{
+    padding: 20px;
+}
+.para2{
+   
+    margin-right: 15px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+    color:white;
+   height: 650px;
+    background-color: #000000;
+    margin-bottom: 100px;
+    border: 1px solid #05B4DE;
+}
+.para2 p{
+    padding: 20px;
+    
+}
+.div8{
+    margin-top: 75px;
+    background-color: #000000;
+    height: 730px;
+    width: 105%;
+    border: 1px solid #1CB510;
+}
+.jeux{
+    width: 130%;
+    margin-top: -60px;
+    margin-bottom: 60px;
+    margin-left: -30px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.5em;
+    border: 1px solid #1CB510;
+    border-radius: 9px;
+    text-align: center;
+    background-image: url("../images/fond_titre_bleu.jpg");
+    background-size: cover;
+
+}
+.jeux h2{
+    text-shadow: 2px 2px 6px #000000;
+
+padding-top: 30px;
+color: #1CB510;
+}
+.jeux1{
+   background-color: #000000;
+   height: 668px;
+  
+   margin-left: 2px;
+   
+   
+}
+.jeux1 .gauche{
+   
+    padding:20px;
+}
+.gauche img{
+    padding: 10px;
+    background-color: #05B4DE;
+    border: 10px ridge #1CB510;
+}
+.gauche p{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+.jeux2{
+    background-color: #000000;
+    height: 668px;
+    margin-left: 30px;
+ }
+ .jeux2 .droite{
+    
+     padding:20px;
+ }
+ .droite img{
+     padding: 10px;
+     background-color: #05B4DE;
+     border: 10px ridge #1CB510;
+ }
+ .droite p{
+     font-family: 'PT Sans Narrow', sans-serif;
+     font-size: 2em;
+     color: white;
+     text-align: center;
+ }
+ .screen{
+
+    background-color: #000000;
+    
+    width: 105%;
+    height: 300px;
+    border:1px solid #05B4DE;
+ }
+ .screenimg{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+   
+ }
+ .screenimg img{
+   
+    height: 113px;
+    width: 200px;
+ }
+ .screen h2{
+    font-family: 'PT Sans Narrow', sans-serif;
+     font-size: 2em;
+     padding-top: 30px;
+     padding-left: 60px;
+     color: #05B4DE;
+     background-color: #000000;
+ }
+ .videos h2{
+    font-family: 'PT Sans Narrow', sans-serif;
+     font-size: 2em;
+     padding-top: 30px;
+     padding-left: 60px;
+     color: #05B4DE;
+     background-color: #000000;
+     
+ }
+ .videos{
+    margin-top: -80px;
+    padding-bottom: -150px;
+    background-color: #000000;
+    border:1px solid #05B4DE;
+    width: 105%;
+    height: 300px;
+ }
+ .videovideo{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+
+ }
+ /*--------------------------------------------------------FOOTER----------------------------------------*/
+
+.foot {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(17, 1fr) repeat(3, 50px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .foot1 { grid-area: 18 / 1 / 21 / 21; }
+    .logo4 { grid-area: 18 / 1 / 21 / 4; }
+    .accueil4 { grid-area: 18 / 5 / 19 / 10; }
+    .magasin4 { grid-area: 19 / 5 / 20 / 10; }
+    .biblio4 { grid-area: 20 / 5 / 21 / 10; }
+    .commu4 { grid-area: 18 / 10 / 19 / 15; }
+    .mc4 { grid-area: 19 / 10 / 20 / 15; }
+    .lm4 { grid-area: 20 / 10 / 21 / 15; }
+    .dev4 { grid-area: 18 / 15 / 19 / 21; }
+    .apropos4 { grid-area: 19 / 15 / 20 / 21; }
+    .langue4 { grid-area: 20 / 15 / 21 / 21; }
+
+    .logo4 img{
+        height: 150px;
+        width: 150px;
+    }
+    .foot1{
+        background-image: url("../images/nav-bar.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0%;
+    }
+    .accueil4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .accueil4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .magasin4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .magasin4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .biblio4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .biblio4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .commu4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .commu4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .mc4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .mc4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .lm4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .lm4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .dev4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .dev4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .apropos4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .apropos4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .langue4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .langue4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }

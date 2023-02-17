@@ -1,0 +1,746 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+
+}
+body{
+    background-image: url("../images/background.png");
+}
+/*--------------------------Grid headerrrrrrrrrrrrrrrrrrr-----------------------*/
+nav {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: 1fr 100px repeat(28, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .barre{  grid-area: 2 / 1 / 3 / 31;  }
+    .logo{ grid-area: 2 / 2 / 3 / 6; }
+    .accueil{ grid-area: 2 / 6 / 3 / 11; }
+    .magasin { grid-area: 2 / 11 / 3 / 16; }
+    .bibliotheque { grid-area: 2 / 16 / 3 / 21; }
+    .communaute { grid-area: 2 / 21 / 3 / 26; }
+    .moncompte { grid-area: 2 / 26 / 3 / 31; }
+    H1{
+    color:green
+}
+/*-------------------------HEADER--------------------------------*/
+.barre{
+    background-image: url("../images/nav-bar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border : 1px groove black;
+}
+
+
+.logo img{
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+.accueil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+}
+
+.magasin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.bibliotheque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.communaute{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.moncompte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : 1px groove black;
+
+}
+.vert{
+    font-size:1em;
+    font-family: 'Press Start 2P', cursive;
+    color: #1CB510;
+    text-shadow: 2px 2px 2px #000000;
+}
+.bleu{
+    font-size:1em;
+    font-family: 'Press Start 2P', cursive;
+    color: #05B4DE;
+    text-shadow: 2px 2px 2px #000000;
+}
+/*-------------------------Communauté----------------------------*/
+.commu {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 2 / 21 / 20; }
+    .capture { grid-area: 1 / 2 / 2 / 6; }
+    .screenshot { grid-area: 2 / 3 / 6 / 19; }
+    .videos { grid-area: 6 / 2 / 7 / 6; }
+    .vid { grid-area: 7 / 3 / 11 / 19; }
+    .tutoriel { grid-area: 11 / 2 / 12 / 6; }
+    .tuto { grid-area: 12 / 3 / 16 / 19; }
+    .foire { grid-area: 16 / 2 / 17 / 6; }
+    .faq { grid-area: 17 / 3 / 21 / 19; }
+
+
+ /*--------------------Screenshot--------------------*/   
+    
+
+ 
+    .capture{
+        margin-top: 75px;
+        height:70px;
+        border: 1px solid #1CB510;
+        background-image: url("../images/fond_titre_bleu.jpg");
+        background-size: cover;
+       
+        border-radius: 9px;
+    }
+    .capture h2{
+        text-shadow: 2px 2px 6px #000000;
+        text-align: center;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size:3em;
+        color: #1CB510;
+    }
+    .screen{
+    
+        background-color: #000000;
+        margin-top: 75px;
+        border: 1px solid black;
+    }
+    .screen img{
+        border: 1px solid #05B4DE;
+        padding:5px 20px 5px 20px;
+        height: 30%;
+        width: 30%;
+    }
+    .screenshot {
+        margin-top: 75px;
+        background-color: #000000;
+        height: 404px;
+        border-radius: 9px;
+        
+       
+    }
+    .text{
+        border:1px solid black;
+        display: inline-flex;
+        flex-direction: row;
+        margin-right: 40px;
+        margin-left: 80px;
+        padding:10px 20px 10px 20px;
+        background-color: #000000;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size:1em;
+        color: white;
+    }
+    .text span{
+        color: #1CB510;
+    }
+    .videos{
+        margin-top: 75px;
+        height:70px;
+        border: 1px solid #05B4DE;
+        background-image: url("../images/fond_titre.jpg");
+        background-size: cover;
+        
+        border-radius: 9px;
+    }
+    .videos h2{
+        text-shadow: 2px 2px 6px #000000;
+        text-align: center;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size:3em;
+        color: #05B4DE;
+    }
+/*-------------------------videos----------------------------*/
+.vid1{
+    
+    background-color: #000000;
+    margin-top: 75px;
+    border: 1px solid black;
+}
+.vid1 iframe{
+    border: 1px solid #1CB510;
+    padding:5px 20px 5px 20px;
+    height: 220px;
+    width: 30%;
+}
+.vid{
+    background-color: #000000;
+    margin-top: 75px;
+    height: 400px;
+}
+/*--------------------tutoriels--------------------*/
+.tutoriel{
+    margin-top: 75px;
+    height:70px;
+    border: 1px solid #1CB510;
+    background-image: url("../images/fond_titre_bleu.jpg");
+        background-size: cover;
+    border-radius: 9px;
+}
+.tutoriel h2{
+    text-shadow: 2px 2px 6px #000000;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:3em;
+    color: #1CB510;
+}
+.tuto{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tuto1{
+    margin:50px 10px 10px 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #1CB510;
+}
+.tuto1 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+}
+.tuto2{
+    margin: 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #05B4DE;
+}
+.tuto2 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+}
+.tuto3{
+    margin: 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #1CB510;
+}
+.tuto3 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+
+}
+.tuto4{
+    margin: 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #05B4DE;
+}
+.tuto4 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+}
+.tuto5{
+    margin:50px 10px 10px 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #05B4DE;
+}
+.tuto5 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+}
+.tuto6{
+    margin: 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #1CB510;
+}
+.tuto6 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+}
+.tuto7{
+    margin: 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #05B4DE;
+}
+.tuto7 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+}
+.tuto8{
+    margin: 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #1CB510;
+}
+.tuto8 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2em;
+}
+/*---------------Foire aux questions-------------------*/
+.foire{
+    margin-top: 75px;
+    height:70px;
+    border: 1px solid #05B4DE;
+    background-image: url("../images/fond_titre.jpg");
+        background-size: cover;
+    border-radius: 9px;
+}
+.foire h2{
+    text-shadow: 2px 2px 6px #000000;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:2em;
+    color: #05B4DE;
+}
+.faq{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.faq1{
+    margin:50px 10px 10px 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #05B4DE;
+}
+.faq p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.8em;
+}
+.faq2{
+    margin: 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #1CB510;
+}
+.faq2 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.8em;
+}
+.faq3{
+    margin: 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #05B4DE;
+}
+.faq3 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.8em;
+}
+.faq4{
+    margin: 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #1CB510;
+}
+.faq4 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.8em;
+}
+.faq5{
+    margin:50px 10px 10px 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #1CB510;
+}
+.faq5 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.8em;
+}
+.faq6{
+    margin: 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #05B4DE;
+}
+.faq6 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.8em;
+}
+.faq7{
+    margin: 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #1CB510;
+}
+.faq7 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.8em;
+}
+.faq8{
+    margin: 10px;
+    border: 1px solid black;
+    height: 100px;
+    width: 650px;
+    background-color: #05B4DE;
+}
+.faq8 p{
+
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.8em;
+}
+/*-----------------------------------Membres----------------------------*/
+.membre {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 16 / 3 / 21 / 19; }
+    .mtitre { grid-area: 16 / 3 / 17 / 7; }
+    .avatar { grid-area: 17 / 3 / 21 / 19; }
+
+    .membre{
+        margin-top: -900px;
+       margin-bottom: 200px;
+        height: 1550px;
+    }
+    .mtitre{
+        margin-left: -70px;
+        margin-top: -75px;
+        height:70px;
+        width: 500px;
+        border: 1px solid #1CB510;
+        background-image: url("../images/fond_titre_bleu.jpg");
+        background-size: cover;
+        border-radius: 9px;
+    }
+    .mtitre h2{
+        text-shadow: 2px 2px 6px #000000;
+
+        text-align: center;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size:3em;
+        color: #1CB510;
+    }
+    .avatar{
+       margin-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .av1{
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 50px;
+    }
+    .av1 img{
+
+        border-radius: 50px;
+    }
+    .av1 p{
+        color: white;
+    }
+    .av1 p span{
+        color: #1CB510;
+    }
+    .av2{
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 50px;
+    }
+    .av2 img{
+        border-radius: 50px;
+    }
+    .av2 p{
+        color: white;
+    }
+    .av2 p span{
+        color: #05B4DE;
+    }
+    .av3{
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 50px;
+    }
+    .av3 img{
+        border-radius: 50px;
+    }
+    .av3 p{
+        color: white;
+    }
+    .av3 p span{
+        color: #1CB510;
+    }
+    .av4{
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 50px;
+    }
+    .av4 img{
+        border-radius: 50px;
+    }
+    .av4 p{
+        color: white;
+    }
+    .av4 p span{
+        color: #05B4DE;
+    }
+    .av5{
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 50px;
+    }
+    .av5 img{
+        border-radius: 50px;
+    }
+    .av5 p{
+        color: white;
+    }
+    .av5 p span{
+        color: #1CB510;
+    }
+    .av6{
+        padding: 20px;
+        background-color: #000000;
+        border-radius: 50px;
+    }
+    .av6 img{
+        border-radius: 50px;
+    }
+    .av6 p{
+        color: white;
+    }
+    .av6 p span{
+        color: #05B4DE;
+    }
+  /*--------------------------------------------------------FOOTER----------------------------------------*/
+
+.foot {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(17, 1fr) repeat(3, 50px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .foot1 { grid-area: 18 / 1 / 21 / 21; }
+    .logo4 { grid-area: 18 / 1 / 21 / 4; }
+    .accueil4 { grid-area: 18 / 5 / 19 / 10; }
+    .magasin4 { grid-area: 19 / 5 / 20 / 10; }
+    .biblio4 { grid-area: 20 / 5 / 21 / 10; }
+    .commu4 { grid-area: 18 / 10 / 19 / 15; }
+    .mc4 { grid-area: 19 / 10 / 20 / 15; }
+    .lm4 { grid-area: 20 / 10 / 21 / 15; }
+    .dev4 { grid-area: 18 / 15 / 19 / 21; }
+    .apropos4 { grid-area: 19 / 15 / 20 / 21; }
+    .langue4 { grid-area: 20 / 15 / 21 / 21; }
+
+    .logo4 img{
+        height: 150px;
+        width: 150px;
+    }
+    .foot1{
+        background-image: url("../images/nav-bar.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0%;
+    }
+    .accueil4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .accueil4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .magasin4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .magasin4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .biblio4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .biblio4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .commu4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .commu4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .mc4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .mc4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .lm4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .lm4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#05B4DE;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .dev4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .dev4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .apropos4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .apropos4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
+    .langue4{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .langue4 h3{
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1em;
+        color:#1CB510;
+        text-shadow: 2px 2px 2px #000000;
+       
+    }
